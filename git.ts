@@ -41,7 +41,7 @@ async function sync() {
   console.log("Going to sync with git");
   await commit();
   console.log("Then pulling from remote");
-  await shell.run("git", ["pull"]);
+  await shell.run("git", ["pull", "--rebase"]);
   console.log("And then pushing to remote");
   await shell.run("git", ["push"]);
   console.log("Done!");
