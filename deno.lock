@@ -1,13 +1,11 @@
 {
-  "version": "3",
-  "packages": {
-    "specifiers": {
-      "jsr:@silverbulletmd/silverbullet@^0.9.4": "jsr:@silverbulletmd/silverbullet@0.9.4"
-    },
-    "jsr": {
-      "@silverbulletmd/silverbullet@0.9.4": {
-        "integrity": "be0311b11d50ddae7ba5cdc1917d0f2e6b12b0d36fb7e28f7581c7b1ec235583"
-      }
+  "version": "4",
+  "specifiers": {
+    "jsr:@silverbulletmd/silverbullet@^2.1.9": "2.1.9"
+  },
+  "jsr": {
+    "@silverbulletmd/silverbullet@2.1.9": {
+      "integrity": "cff0228b9e1b40f98c8e5cc3aa5ec527d1fd855668a4262e76f40b825dca8fe4"
     }
   },
   "remote": {
@@ -32,7 +30,7 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@silverbulletmd/silverbullet@^0.9.4"
+      "jsr:@silverbulletmd/silverbullet@^2.1.9"
     ]
   }
 }
