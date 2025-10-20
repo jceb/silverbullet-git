@@ -4,8 +4,6 @@ requiredPermissions:
 functions:
   autoCommit:
     path: git.ts:autoCommit
-    env: server
-    cron: "* * * * *"
   githubCloneCommand:
     path: "./git.ts:githubCloneCommand"
     command:
@@ -26,3 +24,13 @@ functions:
     path: "./git.ts:gitReplaceTokenCommand"
     command:
       name: "Git: Replace Token"
+
+config:
+  schema.tag:
+    git:
+      type: object
+      properties:
+        autoCommitMinutes:
+          type: number
+        autocommit:
+          type: boolean

@@ -133,6 +133,12 @@ export async function autoCommit() {
   }
 }
 
+// initialize autoCommit interval
+if (globalThis.gitInterval) {
+  clearTimeout(globalThis.gitInterval);
+}
+setInterval(autoCommit, 60 * 1_000);
+
 function _extractGithubUrlInfo(url: string): [string] | null {
   const match = url.match(_githubRegex);
   if (!match) return null;
